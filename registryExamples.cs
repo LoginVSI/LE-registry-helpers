@@ -14,6 +14,8 @@ public class RegistryAppAssertSuite : ScriptBase
     // ======================
     // User variables (edit me)
     // ======================
+
+    // Ensure to edit the target magic comment ( // TARGET:<path> ) at the top of this script with the intended target app path
     private const string AppDisplayNamePattern = "Visual Studio Code*"; // wildcard against DisplayName
     private const string ExeFileName          = "Code.exe";             // primary executable file name
     private const string TargetProcessName    = "code";                 // process name for START/STOP
@@ -38,7 +40,7 @@ public class RegistryAppAssertSuite : ScriptBase
     private const int    PassTimer    = 0;
     private const int    FailTimer    = 10000;
 
-    private AppInfo _app = new AppInfo(); // non-null default
+    private AppInfo _app = new AppInfo(); 
 
     void Execute()
     {
